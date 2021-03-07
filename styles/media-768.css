@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .header__inner {
+    min-height: 38px;
+  }
+  .login__link {
+    display: inline-flex;
+  }
+  .login__link {
+    color: #000000;
+  }
+  .basket__menu-count {
+    top: 5px;
+    left: 1px
+  }
+
+}
