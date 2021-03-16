@@ -1,16 +1,118 @@
 @media (min-width: 768px) {
-  .header__inner {
-    min-height: 38px;
-  }
-  .login__link {
-    display: inline-flex;
-  }
-  .login__link {
-    color: #000000;
-  }
-  .basket__menu-count {
-    top: 5px;
-    left: 1px
-  }
+    .title {
+        font-size: 20px;
+    }
+    .header__banner-promo {
+        display: flex;
+    }
+
+
+    .header__banner-promo-2 {
+        display: none;
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+    }
+
+    .header__inner {
+        min-height: 38px;
+    }
+
+    .basket__menu-count {
+        top: 5px;
+        left: 1px
+    }
+
+    .product__item-btns-wrap {
+        width: 360px;
+    }
+    .insta-main {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+    .footer__tab,
+    .grid__container-wrapper {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .grid__container-wrapper {
+        padding: 0 18px;
+    }
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 445px 445px 445px;
+        grid-template-areas:
+            "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
+            "box-3 box-3 box-3 box-3 box-3 box-4 box-4 box-4"
+            "box-5 box-5 box-5 box-6 box-6 box-6 box-6 box-6";
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+    }
+
+    .grid__box {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-size: 34px;
+        font-weight: 400;
+        color: #FFFFFF;
+        background-size: cover;
+        transition: 0.4s all;
+    }
+
+    .grid__box:hover {
+        opacity: 1;
+    }
+
+    .box-1 {
+        grid-area: box-1;
+        background-image: url("../img/grid-pic-1.png");
+    }
+
+    .box-2 {
+        grid-area: box-2;
+        background-image: url("../img/grid-pic-2.png");
+    }
+
+    .box-3 {
+        grid-area: box-3;
+        background-image: url("../img/grid-pic-3.png");
+    }
+
+    .box-4 {
+        grid-area: box-4;
+        background-image: url("../img/grid-pic-4.png");
+    }
+
+    .box-5 {
+        grid-area: box-5;
+        background-image: url("../img/grid-pic-5.png");
+    }
+
+    .box-6 {
+        grid-area: box-6;
+        background-image: url("../img/grid-pic-6.png");
+    }
+
+    .footer__wrapper {
+        display: flex;
+    }
+
+    .footer__main-2 {
+        display: inherit;
+    }
+
+    .footer__main {
+        display: none;
+    }
+
+    .footer__mobile {
+        display: none;
+    }
+
 
 }
