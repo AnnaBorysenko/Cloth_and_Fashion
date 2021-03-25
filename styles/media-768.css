@@ -1,14 +1,50 @@
 @media (min-width: 768px) {
     .title {
         font-size: 20px;
+        padding: 21px 0;
+    }
+    .title::after,
+    .title::before {
+        width: 70px;
+        height: 12px;
     }
     .header__banner-promo {
         display: flex;
-    }
+        height: 14px;
 
+    }
 
     .header__banner-promo-2 {
         display: none;
+    }
+    .head {
+        min-height: 456px;
+    }
+    .head .banner-top__title {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .head .banner-top__text {
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: 5px;
+        width: 205px;
+    }
+    .banner-top__slider-prev {
+        margin-bottom: -1px;
+        margin-left: -85px;
+    }
+    .top-slider__img {
+        min-height: 456px;
+        object-position: 53%;
+    }
+    .top-slider.owl-theme .owl-dots .owl-dot.active span,
+    .top-slider.owl-theme .owl-dots .owl-dot span {
+        width: 12px;
+        height: 12px;
+    }
+    .top-slider.owl-theme .owl-dots .owl-dot span {
+       margin:0 8px 9px 0 ;
     }
 
     .top-section {
@@ -23,9 +59,28 @@
         top: 5px;
         left: 1px
     }
+    .login__link {
+        font-size: 21px;
+        top: 6px;
+        right: 62px;
+        display: inherit;
+    }
+    .products > .owl-stage-outer {
+        margin-top: -47px;
+    }
 
     .product__item-btns-wrap {
         width: 360px;
+    }
+    .main__icon {
+        margin: 0 auto 30px;
+    }
+    .main__icon-img {
+        background-image: url("../img/icon-main-tab.png");
+        width: 129px;
+        height: 30px;
+        bottom: 0;
+        left: 13px;
     }
     .insta-main {
         margin: 0 auto;
@@ -100,6 +155,7 @@
 
     .footer__wrapper {
         display: flex;
+        height: 38px;
     }
 
     .footer__main-2 {
@@ -112,6 +168,20 @@
 
     .footer__mobile {
         display: none;
+    }
+    .product__item-total {
+        width: 330px;
+    }
+
+    @keyframes showBasket {
+        0% {
+            z-index: 0;
+        }
+        100% {
+            z-index: 1001;
+            transform: translateX(60%);
+            display: block;
+        }
     }
 
 
